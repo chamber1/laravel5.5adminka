@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/_left_menu.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/_headernav.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/routes/web.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Controllers/Admin/TestController.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/_form.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/public/assets/js/app.js</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/modal_confirmation.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Requests/TestRequest.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/dashboard.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/edit.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Controllers/Admin/DashboardController.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/test.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/create.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/public/assets/js/admin/app.js</file>
+        </group>
+    </open-files>
+</project-private>
