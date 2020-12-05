@@ -3,7 +3,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\Post;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\TestRequest;
+use App\Http\Requests\PostRequest;
 use Yajra\DataTables\DataTables;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
@@ -68,13 +68,14 @@ class PostController extends Controller{
         return view('admin.post.edit',compact('postModel'));
     }
 
-    public function update(PostRequest $request,Test $test)
+    public function update(PostRequest $request,Post $post)
     {
        
-        $test->name = $request->input('name');
-        $test->message = $request->input('message');
+        $post->title = $request->input('title');
+        $post->user_id = Auth::user()->id;
+        $post->body = $request->input('body');
         
-        if ($test->update()) {
+        if ($post->update()) {
            return redirect()->back()->withSuccess('Record updated');;
         } 
     }
@@ -84,19 +85,20 @@ class PostController extends Controller{
      *
      * @return Response
      */
-    public function store(TestRequest $request)
+    public function store(PostRequest $request)
     {
-        $test = new Test();
+        $post = new Post();
 
 
-        $test->name = $request->input('name');
-        $test->message = $request->input('message');
-        $test->save();
+        $post->title = $request->input('title');
+        $post->user_id = Auth::user()->id;
+        $post->body = $request->input('body');
+        $post->save();
 
 
-        if ($test->id) {
+        if ($post->id) {
             
-            return redirect('admin/test/'.$test->id.'/edit')->with('success', 'Record created');
+            return redirect('admin/post/'.$post->id.'/edit')->with('success', 'Record created');
            
         }else{
             
@@ -111,13 +113,13 @@ class PostController extends Controller{
      * @param Test $test
      * @return Response
      */
-    public function getModalDelete(Test $test)
+    public function getModalDelete(Post $post)
     {
-        $model = 'test';
-        $item  = $test;
+        $model = 'post';
+        $item  = $post;
         $confirm_route = $error = null;
         try {
-            $confirm_route = route('admin.test.delete', ['id' => $test->id]);
+            $confirm_route = route('admin.post.delete', ['id' => $post->id]);
             return view('admin.layouts.modal_confirmation', compact('item','error', 'model', 'confirm_route'));
         } catch (GroupNotFoundException $e) {
 
@@ -126,12 +128,12 @@ class PostController extends Controller{
         }
     }
     
-    public function destroy(Test $test){
+    public function destroy(Post $post){
         
         
-        if(Test::find($test->id)->delete()){
+        if(Post::find($post->id)->delete()){
             
-            return redirect('admin/test/')->with('success', 'Record deleted');
+            return redirect('admin/post/')->with('success', 'Record deleted');
             
             
         }

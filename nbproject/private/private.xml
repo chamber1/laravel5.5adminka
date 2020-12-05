@@ -3,20 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/post/create.blade.php</file>
             <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/_left_menu.blade.php</file>
             <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/_headernav.blade.php</file>
             <file>file:/C:/OSPanel/domains/lara55.loc/routes/web.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Controllers/Admin/TestController.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/_form.blade.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/public/assets/js/app.js</file>
             <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/modal_confirmation.blade.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Requests/TestRequest.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Controllers/Admin/PostController.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Models/Post.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/readme.md</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/database/seeds/PostsTableSeeder.php</file>
             <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/layouts/dashboard.blade.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/edit.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Controllers/Auth/RegisterController.php</file>
             <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Controllers/Admin/DashboardController.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/test.blade.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/test/create.blade.php</file>
-            <file>file:/C:/OSPanel/domains/lara55.loc/public/assets/js/admin/app.js</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/User.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/post/index.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/post/_form.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/resources/views/admin/post/edit.blade.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/database/seeds/UsersTableSeeder.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/database/migrations/2020_12_03_121745_posts_table.php</file>
+            <file>file:/C:/OSPanel/domains/lara55.loc/app/Http/Requests/PostRequest.php</file>
         </group>
     </open-files>
 </project-private>

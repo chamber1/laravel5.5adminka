@@ -30,8 +30,8 @@
                             </ul>
                         </div>
                     @endif
-                    {!! Form::open(array( 'url'=>'admin/test/store', 'method' => 'post')) !!}
-                        @include('admin.test._form')
+                    {!! Form::open(array( 'url'=>'admin/post/store', 'method' => 'post')) !!}
+                        @include('admin.post._form')
                     {!! Form::close() !!}
                 </div>
             </div>

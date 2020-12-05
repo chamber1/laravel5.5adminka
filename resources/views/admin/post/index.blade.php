@@ -46,7 +46,7 @@
                           <!-- /.card-header -->
                         <div class="card-body">
                             <div class="pull-right">
-                                <a href="{{ URL::to('admin/test/create') }}" class="btn btn-sm btn-primary">
+                                <a href="{{ URL::to('admin/post/create') }}" class="btn btn-sm btn-primary">
                                     <i class="material-icons add">Create</i> 
                                 </a>
                             </div>
