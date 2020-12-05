@@ -10,6 +10,7 @@
       </p>
     </a>
   </li>
+  <!--
   <li class="nav-item">
     <a href="pages/gallery.html" class="nav-link">
       <i class="nav-icon far fa-image"></i>
@@ -106,6 +107,7 @@
       </li>
     </ul>
   </li>
+  -->
   <li class="nav-item has-treeview">
     <a href="#" class="nav-link">
       <i class="nav-icon far fa-plus-square"></i>
@@ -124,6 +126,8 @@
       
     </ul>
   </li>
+  
+  <!--
   <li class="nav-header">MISCELLANEOUS</li>
   <li class="nav-item">
     <a href="https://adminlte.io/docs/3.0" class="nav-link">
@@ -152,7 +156,7 @@
     </a>
   </li>
 </ul>
-
+-->
 
 
 {{-- test scripts --}}

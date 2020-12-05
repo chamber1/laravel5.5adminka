@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Admin;
 
-use App\Test;
+use App\Models\Post;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TestRequest;
 use Yajra\DataTables\DataTables;
@@ -15,7 +15,7 @@ use \Illuminate\Http\Request;
  *
  * @author yuren
  */
-class TestController extends Controller{
+class PostController extends Controller{
     
     
     public function __construct()
@@ -27,7 +27,7 @@ class TestController extends Controller{
     public function index() {
 
         
-        return view('admin/test/test');   
+        return view('admin/post/index');   
     }
     
     public function delete() {
@@ -37,12 +37,12 @@ class TestController extends Controller{
     
     public function data() {
         
-        $tables = Test::select(['id', 'name','message']);
+        $tables = Post::select(['id', 'title','body']);
      
         return DataTables::of($tables)
-            ->addColumn('action', function (Test $tables) {
-                $html = '<a href="' . URL::to('admin/test/' . $tables->id . '/edit') . '" class="btn btn btn-primary btn-sm btn-sm-table"><i class="fa fa-edit"></i>Edit</a>&nbsp;&nbsp;&nbsp;';
-                $html.= '<a href="'.URL::to('admin/test/' . $tables->id . '/confirm-delete').'" 
+            ->addColumn('action', function (Post $tables) {
+                $html = '<a href="' . URL::to('admin/post/' . $tables->id . '/edit') . '" class="btn btn btn-primary btn-sm btn-sm-table"><i class="fa fa-edit"></i>Edit</a>&nbsp;&nbsp;&nbsp;';
+                $html.= '<a href="'.URL::to('admin/post/' . $tables->id . '/confirm-delete').'" 
                                     class="btn btn btn-danger btn-sm delete-modal btn-sm-table"
                                     data-toggle="modal" data-target="#delete_confirm">
                                     <i class="fa fa-trash-o"></i>Delete
@@ -56,19 +56,19 @@ class TestController extends Controller{
 
     public function create()
     {
-        return view('admin.test.create');
+        return view('admin.post.create');
     }
     
     
     
-    public function edit(Request $request,Test $test)
+    public function edit(Request $request,Post $post)
     {   
-        $testModel = Test::find($test->id);
+        $postModel = Post::find($post->id);
        
-        return view('admin.test.edit',compact('testModel'));
+        return view('admin.post.edit',compact('postModel'));
     }
 
-    public function update(TestRequest $request,Test $test)
+    public function update(PostRequest $request,Test $test)
     {
        
         $test->name = $request->input('name');

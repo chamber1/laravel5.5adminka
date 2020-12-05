@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Test extends Model
+class Post extends Model
 {
-    protected $table = 'test'; //
+    protected $table = 'posts'; //
     
     /**
      * The attributes that are mass assignable.
@@ -14,7 +14,7 @@ class Test extends Model
      * @var array
      */
     protected $fillable = [
-        'name','message',
+        'title','body'
     ];
     
     

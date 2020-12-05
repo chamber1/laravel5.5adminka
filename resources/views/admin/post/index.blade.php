@@ -102,11 +102,11 @@
             var table = $('#table1').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '{!! route('admin.test.data') !!}',
+                ajax: '{!! route('admin.post.data') !!}',
                 order: [[ 1, "desc" ]],
                 columns: [
-                    { data: 'name', name: 'name' },
-                    { data: 'message', name: 'message'},
+                    { data: 'title', name: 'title' },
+                    { data: 'body', name: 'body'},
                     { data: 'action', name: 'action', width:'200px', orderable: false, searchable: false },
 
                 ]

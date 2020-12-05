@@ -37,19 +37,19 @@ Route::group(['prefix' => 'admin'],function () {
     
     Route::get('dashboard', 'Admin\DashboardController@index')->name('admin.dashboard');
     
-    //ENTITY TEST
-    Route::get('test', 'Admin\TestController@index')->name('admin.test');
-    Route::get('test/data', 'Admin\TestController@data')->name('admin.test.data');
+    //ENTITY POST
+    Route::get('post', 'Admin\PostController@index')->name('admin.post');
+    Route::get('post/data', 'Admin\PostController@data')->name('admin.post.data');
     
     //Test CRUD operations
-    Route::group(['prefix' => 'test'], function () {
+    Route::group(['prefix' => 'post'], function () {
         
-        Route::get('create', 'Admin\TestController@create')->name('admin.test.create');
-        Route::post('store', 'Admin\TestController@store')->name('admin.test.store');
-        Route::get('{test}/edit', 'Admin\TestController@edit')->name('admin.test.edit');
-        Route::post('{test}/update', 'Admin\TestController@update')->name('admin.test.update');
-        Route::get('{test}/confirm-delete', 'Admin\TestController@getModalDelete')->name('test.confirm.delete');
-        Route::get('{test}/delete', 'Admin\TestController@destroy')->name('admin.test.delete');
+        Route::get('create', 'Admin\PostController@create')->name('admin.post.create');
+        Route::post('store', 'Admin\PostController@store')->name('admin.post.store');
+        Route::get('{post}/edit', 'Admin\PostController@edit')->name('admin.post.edit');
+        Route::post('{post}/update', 'Admin\PostController@update')->name('admin.post.update');
+        Route::get('{post}/confirm-delete', 'Admin\PostController@getModalDelete')->name('post.confirm.delete');
+        Route::get('{post}/delete', 'Admin\PostController@destroy')->name('admin.post.delete');
        
     });
     

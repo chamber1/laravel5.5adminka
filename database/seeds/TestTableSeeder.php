@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Test;
+use App\Post;
 
 
-class TestTableSeeder extends Seeder
+class PostTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class TestTableSeeder extends Seeder
     public function run()
     {
         Test::create([
-                'name' => 'Vasya',
+                'title' => 'Test post title 1',
                 'message' => 'WOWOWOWOW'
         ]);
         
