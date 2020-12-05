@@ -30,7 +30,7 @@
                             </ul>
                         </div>
                     @endif
-                {!! Form::model($testModel, array( 'url'=>'admin/test/'.$testModel->id.'/update', 'method' => 'post')) !!}
+                {!! Form::model($testModel, array( 'url'=>'admin/post/'.$testModel->id.'/update', 'method' => 'post')) !!}
                     @include('admin.test._form')
                 {!! Form::close() !!}
                 </div>
